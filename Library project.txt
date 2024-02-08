@@ -1,0 +1,41 @@
+class Library:
+    def __init__(self):
+        self.login=0
+        self.id1=int(input("Enter id:"))
+        self.pw1=int(input("Enter password:"))
+        if (self.id1==self.pw1):
+            print("Welcome to the library!")
+            self.login=1
+        else:
+            print("Invalid id/password")
+    def Medical_book(self):
+        if(self.login==1):
+            self.Medical_book=input("Name of medical book:")
+            print("Buy medical book:",self.Medical_book)
+        else:
+            print("Can't buy medical book/books, invalid id/password")
+    def Engineering_book(self):
+        if(self.login==1):
+            self.Engineering_book=input('Name of engineering book:')
+            print("Buy engineering book:",self.Engineering_book)
+        else:
+            print("Can't buy engineering book/books, invalid id/password")
+    def History_book(self):
+        if(self.login==1):
+            self.History_book=input("Name of History book:")
+            print("Buy History book:",self.History_book)
+        else:
+            print("Can't buy History book/books, invalid id/password")
+    def Fiction_book(self):
+         if(self.login==1):
+            self.Fiction_book=input('Name of Fiction book:')
+            print("Buy Fiction book:",self.Fiction_book)
+        else:
+            print("Can't buy Fiction book/books, invalid id/password")
+
+            
+Saurabh=Library()
+Saurabh.Medical_book()
+Saurabh.Engineering_book()
+Saurabh.History_book()
+Saurabh.Fiction_book()

@@ -1,0 +1,56 @@
+                                               # Railway Passenger Enquiry
+class Railway:
+    def __init__(self):
+        self.login=0
+        self.user_id=int(input("Enter user id:"))
+        self.password=int(input("Enter password:"))
+        if (self.user_id==self.password):
+            print("Welcome to Nagpur Railway Station")
+            self.train_number=int(input('Enter train number:'))
+            self.login=1
+        else:
+            print("Incorrect user_id/password")
+            print("Try again!")
+            
+    def Rajdhani(self):
+        if(self.login==1 and self.train_number==12951):
+            print('Source-Destination: Mumbai Central-New Delhi')
+            print('Distance: 1384 KM, Speed:130 km/hr and Time: 15:35 hrs')
+        else:
+            print("Invalid train number")
+                
+    def Shatabdi(self):
+        if(self.login==1 and self.train_number==12002):
+            print("Source-Destination: New Delhi-Habibganj(Bhopal)")
+            print("Distance:707 KM, Speed:150 km/hr and Time: 8:25 hrs")
+        else:
+            print("Invalid train number")
+                
+    def Tejas(self):
+        if (self.login==1 and self.train_number==12249):
+            print("Source-Destination: Howrah-New Delhi")
+            print("Distance:1447 KM, Speed:130 km/hr and Time: 16:50 hrs")
+        else:
+            print("Invalid train number")
+                
+    def Duronto(self):
+        if(self.login==1 and self.train_number==12260):
+            print("Source-Destination: New Delhi-Sealdah")
+            print("Distance:1453 KM, Speed:130 km/hr and Time: 16:55 hrs")
+        else:
+            print("Invalid train number")
+                
+    def Janshatabdi(self):
+        if(self.login==1 and self.train_number==12060):
+            print("Source-Destination: Hazrat Nizamuddin-Kota")
+            print("Distance:458 KM, Speed:140 km/hr  and Time: 6:20 hrs")
+        else:
+            print("Invalid train number") 
+            
+            
+Saurabh=Railway() 
+Saurabh.Rajdhani()
+Saurabh.Shatabdi()
+Saurabh.Tejas()
+Saurabh.Duronto()
+Saurabh.Janshatabdi()
